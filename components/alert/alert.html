@@ -35,7 +35,7 @@
             <li class="component-list-item">
                 <a class="component-link" href="../image/image.html">Image</a>
             </li>
-            <li class="component-list-item">..
+            <li class="component-list-item">
                 <a class="component-link" href="../input/input.html">Input</a>
             </li>
             <li class="component-list-item">
@@ -69,8 +69,71 @@
         <div class="container">
             <h1>Alerts</h1>
             <p>Alerts provide feedback based on user actions.</p>
-            <div class=""></div>
+
+            <h2>Basic Alerts</h2>
+            <div class="alert alert-primary">
+                This is a primary alert
+            </div>
+            <div class="alert alert-secondary">
+                This is a secondary alert
+            </div>
+            <div class="alert alert-error">
+                This is an error alert
+            </div>
+            <div class="alert alert-warning">
+                This is a warning alert
+            </div>
+            <div class="alert alert-success">
+                This is a success alert
+            </div>
+            <div class="alert alert-info">
+                This is an info alert
+            </div>
+            <div class="alert alert-dark">
+                This is a dark alert
+            </div>
+
+            <h2>Alerts with Links</h2>
+            <p>Just add an a tag and you're good!</p>
+            <div class="alert alert-primary">
+                This is a primary alert. For more info, visit <a href="#">here.</a>
+            </div>
+            <div class="alert alert-secondary">
+                This is a secondary alert. For more info, visit <a href="#">here.</a>
+            </div>
+            <div class="alert alert-error">
+                This is an error alert caused due to <a href="#">this.</a>
+            </div>
+            <div class="alert alert-warning">
+                This is a warning alert caused due to <a href="#">this.</a>
+            </div>
+            <div class="alert alert-success">
+                This is a success alert. For more info, visit <a href="#">here.</a>
+            </div>
+            <div class="alert alert-info">
+                This is an info alert. For more, visit <a href="#">here.</a>
+            </div>
+            <div class="alert alert-dark">
+                This is a dark alert. For more, visit <a href="#">here.</a>
+            </div>
+
+            <h2>Dismissable Alerts</h2>
+            <p>These alerts can be hidden or removed by clicking the close button.</p>
+            <div class="alert alert-warning" id="alert-dismissable">
+                <button id="alert-close-button" onclick="hideDiv()">&times;</button>
+                This is a warning alert that can be dismissed.
+            </div>
         </div>
     </div>
+    <script>
+        function hideDiv() {
+          var x = document.getElementById("alert-dismissable");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>

@@ -81,8 +81,8 @@
             <!-- card with dismiss -->
             <h2>Card with Dismiss</h2>
             <p>These are cards with the dismiss button. On clicking dismiss, the card is not seen.</p>
-            <div class="card">
-                <button class="card-dismiss-button">&times;</button>
+            <div class="card" id="card-dismissable">
+                <button onclick="hideDiv()" class="card-dismiss-button">&times;</button>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
@@ -125,5 +125,15 @@
             </div>
         </div>
     </div>
+    <script>
+        function hideDiv() {
+          var x = document.getElementById("card-dismissable");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>

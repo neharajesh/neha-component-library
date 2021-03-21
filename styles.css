@@ -56,6 +56,73 @@ hr {
     color: gray;
 }
 
+/* ALERT */
+.alert {
+    width: auto;
+    height: content;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.alert > a {
+    color: inherit;
+    font-weight: bolder;
+}
+
+.alert-primary {
+    border: 1px solid blue;
+    background-color: rgb(128, 174, 243);
+    color: rgb(16, 1, 104);
+}
+
+.alert-secondary {
+    border: 1px solid rgb(115, 116, 117);
+    background-color: rgb(182, 193, 228);
+    color: rgb(38, 41, 65);
+}
+
+.alert-error {
+    border: 1px solid red;
+    background-color: rgb(241, 137, 119);
+    color: darkred;
+}
+
+.alert-warning {
+    border: 1px solid rgb(105, 105, 1);
+    background-color: lightyellow;
+    color: rgb(124, 124, 3);
+}
+
+.alert-success {
+    border: 1px solid rgb(4, 102, 42);
+    background-color: rgb(185, 236, 185);
+    color: rgb(10, 100, 14);
+}
+
+.alert-info {
+    border: 1px solid rgb(0, 103, 134);
+    background-color: rgb(153, 242, 248);
+    color: rgb(43, 65, 126);
+}
+
+.alert-dark {
+    background-color: rgb(158, 160, 158);
+}
+
+#alert-dismissable {
+    display: block;
+}
+
+#alert-close-button {
+    float: right;
+    color: inherit;
+    border: none;
+    background: inherit;
+    font-size: 1.1em;
+}
+
 /* BUTTONS */
 .button-primary {
     background-color: var(--color-primary-darker, #3A405A);
@@ -132,6 +199,10 @@ hr {
     border-bottom-right-radius: 2px;
 }
 
+#card-dismissable {
+    display: block;
+}
+
 .card-dismiss-button {
     position: absolute;
     background: transparent;
@@ -181,6 +252,39 @@ hr {
     height: auto;
 }
 
+/* INPUT */
+.input-username {
+    width: auto;
+    height: content;
+    /* padding: 10px; */
+    border: 1px solid black;
+}
+
+.input-username > span {
+    background: gray;
+}
+
+.input-username > input {
+    height: inherit;
+    width: auto;
+}
+
+.input-textbox {
+    height: 60px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.input-textarea {
+    height: inherit;
+    width: auto;
+}
+
+.input-textarea:focus {
+    border: 4px inset #5462ff;
+}
+
 /* LISTS */
 .list-spaced {
     display: inline;
@@ -201,6 +305,55 @@ hr {
     text-decoration: none;
     padding: 15px 10px;
     width: 450px;
+}
+
+/* SIMPLE GRIDS */
+.grid-container {
+    display:grid;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid2 {
+    grid-template-columns: auto auto;
+}
+
+.grid3 {
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color:rgb(153, 242, 248);
+}
+
+/* .simplegrid {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.item1 {
+    grid-area: item1;
+    background: red;
+}
+
+.item2 {
+    grid-area: item2;
+    background: blue;
+}
+
+.item3 {
+    grid-area: item3;
+    background: green;
 }
 
 /* TEXT UTILITIES */
