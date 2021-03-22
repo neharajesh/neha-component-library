@@ -1,10 +1,13 @@
-.root {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
     --color-primary-light : #9FBBCC;
     --color-primary-dark : #7A9CC6;
     --color-primary-darker: #3A405A;
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0px;
     display: grid;
     grid-template-areas: "header header header header"
@@ -15,16 +18,40 @@ body {
 
 header {
     grid-area: header;
-    background-color: #3A405A;
-    color: white;
+    /* background-color: var(--color-primary-darker);
+    color: white; */
+    color: var(--color-primary-darker);
     height: 100px;
     margin: 0px;
     padding-left: 20px;
 }
 
+.header-links {
+    width: 300px;
+    float: right;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+}
+
+.header-links > a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--color-primary-darker);
+    padding: 15px;
+}
+
+.header-links > a:hover {
+    border: none;
+    background: var(--color-primary-darker);
+    color: white;
+}
+
 .container-component-list {
     padding-left: 30px;
     grid-area: components;
+    position: fixed;
+    top: 100px;
 }
 
 .component-list-item  {
@@ -54,6 +81,11 @@ header {
 
 hr {
     color: gray;
+}
+
+#home-content {
+    padding: 50px;
+    min-width: 300px;
 }
 
 /* ALERT */
@@ -125,7 +157,7 @@ hr {
 
 /* BUTTONS */
 .button-primary {
-    background-color: var(--color-primary-darker, #3A405A);
+    background-color: var(--color-primary-darker);
     /* background-color: black; */
     border-radius: 3px;
     border: none;
@@ -141,7 +173,7 @@ hr {
     height: 30px;
     width: 100px;
     text-align: left;
-    background-color: var(--color-primary-dark, #7A9CC6);
+    background-color: var(--color-primary-dark);
 }
 
 .button-link a {
@@ -163,7 +195,7 @@ hr {
     width: 60px;
     border-radius: 50%;
     border: none;
-    background-color: var(--color-primary-light, #9FBBCC);
+    background-color: var(--color-primary-light);
 }
 
 .button-floating-image {
