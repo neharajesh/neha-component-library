@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 
 :root {
-    --color-primary-light : #9FBBCC;
-    --color-primary-dark : #7A9CC6;
-    --color-primary-darker: #3A405A;
+    --color-primary-light : #C4B5FD;
+    --color-primary-dark : #8B5CF6;
+    --color-primary-darker:#4C1D95;
 }
 
 body {
@@ -24,14 +25,32 @@ header {
     height: 100px;
     margin: 0px;
     padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-brand {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+#header-name {
+    font-family: 'Chango', cursive;
+}
+
+#header-img {
+    height: 60px;
+    width: 60px;
+    padding-top: 3px;
 }
 
 .header-links {
     width: 300px;
-    float: right;
-    position: fixed;
+    padding-top: 28px;
+    /* position: fixed;
     top: 25px;
-    right: 20px;
+    right: 20px; */
 }
 
 .header-links > a {
