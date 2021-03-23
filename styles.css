@@ -88,6 +88,11 @@ hr {
     min-width: 300px;
 }
 
+iframe {
+    margin: 10px;
+    height: fit-content;
+}
+
 /* ALERT */
 .alert {
     width: auto;
