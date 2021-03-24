@@ -11,7 +11,7 @@
     <header>
         <div id="header-brand">
             <img id="header-img" src="../../jelly.svg" />
-            <h1 id="header-name">purplecss</h1>
+            <h1 class="div-heading" id="header-name">purplecss</h1>
         </div>
         <div class="header-links">
             <a href="../../index.html">Home</a>
@@ -75,18 +75,43 @@
 
     <div class="content">
         <div class="container">
-            <h1>Buttons</h1>
-            <h2>Primary Button</h2>
+            <h1 class="div-heading">Primary Button</h1>
             <p>This can be used for all the buttons that the user will click on success.</p>
             <button class="button-primary">Click Me!</button>
+            <button class="button-primary" style="background-color: #EC4899;">Click Me!</button>
+            <button class="button-primary" style="background-color: #10B981;">Click Me!</button>
+            <button class="button-primary" style="background-color: #F59E0B;">Click Me!</button>
+            <button class="button-primary" style="background-color: #EF4444;">Click Me!</button>
+            <button class="button-primary" style="background-color: #6B7280;">Click Me!</button>
             <br>
             <iframe
             src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=24px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button-primary%2522%253E%2520Click%2520Me%21%2520%253C%252Fbutton%253E"
             style="width: 904px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
             sandbox="allow-scripts allow-same-origin">
             </iframe>
+
+            <hr>
+
+            <h1 class="div-heading">Secondary Button</h1>
+            <p>This can be used for all the buttons that the user will click on failure or otherwise.</p>
+            <button class="button-secondary">Click Me!</button>
+            <button class="button-secondary" style="border: 2px solid #EC4899;">Click Me!</button>
+            <button class="button-secondary" style="border: 2px solid #10B981;">Click Me!</button>
+            <button class="button-secondary" style="border: 2px solid #F59E0B;">Click Me!</button>
+            <button class="button-secondary" style="border: 2px solid #EF4444;">Click Me!</button>
+            <button class="button-secondary" style="border: 2px solid #6B7280;">Click Me!</button>
+            <br>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=24px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button-secondary%2522%253E%2520Click%2520Me%21%2520%253C%252Fbutton%253E"
+            style="width: 904px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+
+            <hr>
+
     
-            <h2>Link Button</h2>
+            <h1 class="div-heading">Link Button</h1>
             <p>On click, this button will go to a link.</p>
             <button class="button-link">
                 <a href="../../index.html">Home</a>
@@ -98,10 +123,38 @@
             style="width: 904px; height: 196px; border:0; transform: scale(1); overflow:hidden;"
             sandbox="allow-scripts allow-same-origin">
             </iframe>
+
+            <hr>
     
-            <h2>Icon Buttons</h2>
+            <h1 class="div-heading">Icon Buttons</h1>
+            <h2>Empty Icons</h2>
+            <button class="button-icon"><img src="home-unfilled.svg"/></button>
+            <button class="button-icon"><img src="heart-unfilled.svg"/></button>
+            <button class="button-icon"><img src="settings-unfilled.svg"/></button>
+            <button class="button-icon"><img src="person-unfilled.svg"/></button>
+            <button class="button-icon"><img src="done-unfilled.svg"/></button>
+            <button class="button-icon"><img src="calendar-unfilled.svg"/></button>
+
+            <h2>Filled Icons</h2>
+            <button class="button-icon"><img src="home-filled.svg"/></button>
+            <button class="button-icon"><img src="heart-filled-black.svg"/></button>
+            <button class="button-icon"><img src="heart-filled-red.svg"/></button>
+            <button class="button-icon"><img src="settings-filled.svg"/></button>
+            <button class="button-icon"><img src="person-filled.svg"/></button>
+            <button class="button-icon"><img src="done-filled.svg"/></button>
+            <button class="button-icon"><img src="calendar-filled.svg"/></button>
+
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=24px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button-icon%2522%253E%2520Add%2520your%2520icon%2520here%2520%252Fbutton%253E"
+            style="width: 904px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+
+            <hr>
+
     
-            <h2>Floating Action Buttons</h2>
+            <h1 class="div-heading">Floating Action Buttons</h1>
             <p>These buttons stay fixed on the screen at a particular position.</p>
             <p>The home button on the bottom right of the screen is an example of this button.</p>
             <button class="button-floating">
