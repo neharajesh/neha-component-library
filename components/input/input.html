@@ -75,21 +75,44 @@
 
     <div class="content">
         <div class="container">
-            <h1>Input</h1>
-            <h2>Textbox</h2>
-            <!-- FIX! -->
-            <div class="input-textbox">
-                <span>Enter text here</span>
-                <textarea class="input-textarea" aria-label="enter text here"></textarea>
-            </div>
+            <h1 class="div-heading">Simple Textfields</h1>
+            <p>Basic textfield with a bottom border. Background changes on focus.</p>
+            <p>Textfields with background. Border appears on focus.</p>
+            <p>Outlined textfields where border appears on focus.</p>
+            <input placeholder="Basic" type="text" class="textfield textfield-basic">
+            <input placeholder="Background" type="text" class="textfield textfield-bg">
+            <input placeholder="Outline" type="text" class="textfield textfield-outline">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=17px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=1x&wm=false&code=%253Cinput%2520placeholder%253D%2522Basic%2522%2520type%253D%2522text%2522%2520class%253D%2522textfield%2520textfield-basic%2522%253E%250A%253Cinput%2520placeholder%253D%2522Background%2522%2520type%253D%2522text%2522%2520class%253D%2522textfield%2520textfield-bg%2522%253E%250A%253Cinput%2520placeholder%253D%2522Outline%2522%2520type%253D%2522text%2522%2520class%253D%2522textfield%2520textfield-outline%2522%253E"
+            style="width: 904px; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
 
-            <h2>Basic Input</h2>
-            <div>
-                <div class="input-username">
-                    <span>@</span>
-                    <input type="text" placeholder="Username"/>
-                </div>
-            </div>
+            <hr>
+
+            <h1 class="div-heading">Simple Textfields with Labels</h1>
+            <p>Textfield with Label on top.</p>
+            <div class="textfield-container">
+                <label class="textfield-label label-top" for="name">Name</label>
+                <input type="text" class="textfield textfield-basic" id="name">
+            </div> 
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=17px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=1x&wm=false&code=%253Clabel%2520class%253D%2522textfield-label%2520label-top%2522%2520for%253D%2522name%2522%253EName%253C%252Flabel%253E%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522textfield%2520textfield-basic%2522%2520id%253D%2522name%2522%253E"
+            style="width: 904px; height: 148px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <br>
+            <p>Textfield with Label on the left.</p>
+            <div class="textfield-container">
+                <label class="textfield-label label-left" for="age">Number</label>
+                <input type="number" class="textfield textfield-bg" id="age" style="margin-top: 15px;">
+            </div>          
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=17px&ph=21px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=1x&wm=false&code=%253Clabel%2520class%253D%2522textfield-label%2520label-left%2522%2520for%253D%2522age%2522%253ENumber%253C%252Flabel%253E%250A%253Cinput%2520type%253D%2522number%2522%2520class%253D%2522textfield%2520textfield-bg%2522%2520id%253D%2522age%2522%253E"
+            style="width: 904px; height: 148px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
         </div>
     </div>
 </body>
