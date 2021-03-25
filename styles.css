@@ -462,7 +462,68 @@ button {
 }
 
 /* INPUT */
+input {
+    outline: none;
+}
 
+.textfield {
+    width: 150px;
+    height: 40px;
+    padding: 3px 8px;
+    border: none;
+    margin-right: 30px;
+    border-radius: 3px;
+}
+
+.textfield-container {
+    padding: 10px;
+    height: 80px;
+    max-width: 400px;
+    border: 1px solid var(--color-primary-darker);
+    border-radius: 2px;
+    padding-left: 25px;
+}
+
+.textfield-label {
+    font-size: 0.8em;
+    color: var(--color-primary-darker);
+    font-weight: bold;
+}
+
+.label-top {
+    display: block;
+
+}
+
+.label-left {
+    display: inline;
+    margin-right: 10px;
+}
+
+.textfield-basic {
+    border-bottom: 2px solid var(--color-primary-darker);
+}
+
+.textfield-basic:focus {
+    background-color: var(--color-primary-lighter);
+}
+
+.textfield-bg {
+    background-color: var(--color-primary-light-200);
+    border: 2px solid transparent;
+}
+
+.textfield-bg:focus {
+    border: 2px solid var(--color-primary-darker);
+}
+
+.textfield-outline {
+    border: 2px solid transparent;
+}
+
+.textfield-outline:focus {
+    border: 2px solid var(--color-primary-darker);
+}
 
 /* LISTS */
 .list-spaced {
