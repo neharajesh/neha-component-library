@@ -70,6 +70,7 @@ body {
 
 #button-getstarted {
     margin-right: 30px;
+    background-color: var(--color-primary-dark);
 }
 
 #button-getstarted a {
