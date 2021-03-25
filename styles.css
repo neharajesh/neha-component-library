@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 
 :root {
-
     --color-primary-lighter: #F5F3FF;
     --color-primary-light : #C4B5FD;
     --color-primary-dark : #8B5CF6;
@@ -48,9 +47,6 @@ header {
 .header-links {
     width: 300px;
     padding-top: 28px;
-    /* position: fixed;
-    top: 25px;
-    right: 20px; */
 }
 
 .header-links > a {
@@ -111,11 +107,6 @@ header {
 
 hr {
     color: gray;
-}
-
-#home-content {
-    padding: 50px;
-    min-width: 300px;
 }
 
 iframe {

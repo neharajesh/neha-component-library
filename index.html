@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
     <title>Home | Purple CSS</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div id="header-brand">
             <img id="header-img" src="jelly.svg" />
             <h1 id="header-name">purplecss</h1>
@@ -18,15 +18,22 @@
             <a href="documentation.html">Docs</a>
             <a href="about.html">About</a>
         </div>
-    </header>
+    </header> -->
 
-    <div id="home-content">
-        <p>
-            Welcome to Neha's Component Library! 
-        </p>
-        <p>
-            Navigate to DOCS to get started! 
-        </p>
+    <div class="intro-container">
+        <div id="lib-intro">
+            <div id="lib-brand">
+                <img id="lib-img" src="jelly.svg" />
+                <p id="lib-name">Purple CSS</p>
+            </div>            
+            <p id="lib-summary">Purple CSS is a simple, modular and easy-to-use component library packed with classes to help you design amazing websites!</p>
+            <p id="lib-summary">All you have to do is include a CSS file!</p>
+            <div id="lib-buttons">
+                <button id="button-getstarted" class="button-primary"> <a href="documentation.html"> Let's get started </a></button>
+                <button id="button-github" class="button-secondary"><a href="https://github.com/neharajesh/purplecss">Github</a></button>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
