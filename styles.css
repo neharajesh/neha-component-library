@@ -7,6 +7,7 @@
     --color-primary-light : #C4B5FD;
     --color-primary-dark : #8B5CF6;
     --color-primary-darker:#4C1D95;
+    --color-overlay-gray: #D1D5DB;
 }
 
 body {
@@ -27,6 +28,7 @@ header {
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 #header-brand {
@@ -407,16 +409,28 @@ button {
     width: 200px;
     margin: 10px;
 }
-
-#card-overlay-container {
     
+
+#card-overlay {
+    height: inherit;
+    width: inherit;
+    background-color: var(--color-overlay-gray);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.3;
 }
 
-#card-image-overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    min-width: 130px;
+#card-overlay-text {
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 12rem;
+}
+
+#card-overlay:hover {
+    opacity: 0.8;
 }
 
 .card-vertical {
