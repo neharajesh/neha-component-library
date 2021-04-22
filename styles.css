@@ -116,6 +116,7 @@ iframe {
 .w-75 { width: 75%; }
 .w-50 { width: 50%; }
 .w-25 { width: 25%; }
+.w-auto { width: auto; }
 .w-inherit { width: inherit; }
 .w-fit { width: fit-content; }
 
@@ -159,7 +160,8 @@ iframe {
 /* Border Radius */
 .bdr-rad-s { border-radius: 1px; }
 .bdr-rad-m { border-radius: 3px; }
-.bdr-rad-l { border-radius: 999px; }
+.bdr-rad-l { border-radius: 5px; }
+.bdr-rad-xl { border-radius: 999px; }
 .bdr-rad-round { border-radius: 50%; }
 
 /* Border Color */
@@ -287,6 +289,11 @@ tr:nth-child(even) {
 .img-s { height: 100px; width: auto; }
 .img-xs { height: 50px; width: auto; }
 
+.img-40 { height: 40px; width: 40px; }
+.img-50 { height: 50px; width: 50px; }
+.img-60 { height: 60px; width: 60px; }
+.img-70 { height: 70px; width: 70px; }
+
 /* CARDS */
 .card { position: relative; }
 .card-wid-40 { width: 40rem; }
@@ -369,39 +376,7 @@ tr:nth-child(even) {
     font-size: 1.1em;
 }
 
-/* AVATAR */
-.avatar-circular {
-    border-radius: 50%;
-    border: none;
-    margin: 10px;
-}
-
-.avatar-square {
-    border: none;
-    border-radius: 3px;
-    margin: 10px;
-}
-
-.avatar-small {
-    width: 40px;
-    height: 40px;
-}
-
-.avatar-medium {
-    width: 50px;
-    height: 50px;
-}
-
-.avatar-large {
-    width: 60px;
-    height: 60px;
-}
-
-.avatar-xl {
-    width: 70px;
-    height: 70px;
-}
-
+/* Old Avatar */
 #avatar-notification-container {
     position: relative;
     width: 60px;
@@ -717,64 +692,6 @@ input {
     width: 25%;
 }
 
-
-/* TEXT UTILITIES */
-.container {
-    margin: 30px;
-}
-
-.div-heading {
-    font-size: 1.5em;;
-}
-
-th {
-    text-align: center;
-}
-
-.heading-table {
-    min-width: 50%;
-    border-collapse: collapse;
-    margin-left: 70px;
-}
-
-.heading-table th{
-    background-color: var(--color-primary-dark, #7A9CC6);
-    padding: 10px;
-}
-
-.heading-table td, .heading-table th {
-    border: 1px solid var(--color-primary-light, #9FBBCC);
-    padding-left: 10px;
-}
-
-.text-red {
-    color: red;
-}
-
-.text-warning {
-    color: gold;
-}
-
-.text-gray {
-    color: gray;
-}
-
-.text-centered {
-    align-content: center;
-    margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.code {
-    background-color: lightgray;
-    border-radius: 2px;
-    padding: 15px;
-    font-family: 'Inconsolata', monospace;
-    width: max-content;
-    margin: auto;
-}
-
 /* TOAST */
 #snackbar {
     visibility: hidden; 
@@ -800,14 +717,4 @@ th {
     bottom: 0;
     right: 0;
     margin: 1rem;
-}
-
-.toast {
-    width: 200px;
-    padding: 1rem 2rem;
-    background-color: var(--color-primary-darker);
-    color: white;
-    margin-bottom: 1rem;
-    border-radius: 2px;
-    z-index: 5;
 }
