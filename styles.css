@@ -111,6 +111,9 @@ iframe {
 .h-75 { height: 75%; }
 .h-50 { height: 50%; }
 .h-25 { height: 25%; }
+.h-auto { height: auto; }
+.h-fit { height: fit-content; }
+.h-inherit { height: inherit; }
 
 .w-100 { width: 100%; }
 .w-75 { width: 75%; }
