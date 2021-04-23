@@ -321,6 +321,8 @@ tr:nth-child(even) {
 .flex-col-space-between { align-items: space-between; }
 .flex-col-space-evenly { align-items: space-evenly; }
 
+.flex-self-center { align-self: center; }
+
 /* Grids */
 .grid-2 { 
     display: grid;
