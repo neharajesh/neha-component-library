@@ -160,6 +160,11 @@ iframe {
 /* Text Decoration */
 .txt-deco-none { text-decoration: none; }
 .txt-underline { text-decoration: underline; }
+.txt-ellipsis { 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
 
 /* Borders */
 .bdr-none { border: none; }
