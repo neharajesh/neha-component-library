@@ -47,57 +47,25 @@ header {
     padding-bottom: 3rem;
 }
 
-header {
-    grid-area: header;
-    color: var(--color-primary-darker);
-    height: 100px;
-    margin: 0px;
-    padding-left: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#header-brand {
-    margin-top: 10px;
-    margin-left: 10px;
-    display: flex;
-}
-
-#header-name {
-    font-family: 'Chango', cursive;
-}
-
-#header-img {
-    height: 60px;
-    width: 60px;
-    padding-top: 3px;
-}
-
-.header-links {
-    width: 300px;
-    padding-top: 28px;
-}
-
-.header-links > a {
-    text-decoration: none;
-    font-size: 1.1em;
-    color: var(--color-primary-darker);
-    padding: 15px;
-}
-
-.header-links > a:hover {
+.h-link:hover {
     border: none;
-    background: var(--color-primary-darker);
+    background: var(--color-primary-purple);
     color: white;
     border-radius: 2px;
 }
 
+.nav {
+    width: 20rem;
+}
+
 .nav-list {
-    height: 1rem;
+    width: 18rem;
+    height: 2rem;
 }
 
 .nav-list:hover {
     background-color: var(--color-secondary-purple);
+    border-radius: 3px;
 }
 
 iframe {
@@ -300,7 +268,7 @@ iframe {
 .tbl-50 { width: 50%; border-collapse: collapse; }
 
 tr:nth-child(even) {
-    background-color: var(--color-secondary-grey);
+    background-color: var(--color-secondary-purple);
 }
 
 /* BUTTONS */
