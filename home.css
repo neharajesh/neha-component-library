@@ -1,106 +1,81 @@
 @import url("styles.css");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
-
-:root {
-    --color-primary-lighter: #F5F3FF;
-    --color-primary-light : #C4B5FD;
-    --color-primary-dark : #8B5CF6;
-    --color-primary-darker:#4C1D95;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.intro-container {
-    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    display: grid;
+    place-items: center;
 }
 
-#lib-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    width: 70vw;
+.cont-intro {
+    width: 60rem;
+    flex: column;
+    align-items: flex-start;
 }
 
-#lib-intro p {
-    margin: 5px;
+.lib-brand {
+    display: grid;
+    place-items: center;
 }
 
-#lib-brand {
-    display: flex;
-    align-items: center;
-}
-
-#lib-img {
-    height: 100px;
-    width: 100px;
-    margin-right: 20px;
-}
-
-#lib-name {
-    font-family: 'Chango', cursive;
+.lib-name { 
     font-size: 3.5em;
     font-weight: bold;
-    color: var(--color-primary-darker);
+    color: var(--color-primary-purple);
     padding-bottom: 50px;
-    padding-top: 50px;
 }
 
-#lib-summary {
+.lib-summary {
     width: inherit;
-    font-size: 2em;
-    padding-top: 10px;
-    text-align: center;
+    font-size: 1.9em;
+    margin-top: 10px;
 }
 
-#lib-buttons button {
+.lib-buttons button {
     font-size: 1.8em; 
     height: 80px; 
     width: 290px; 
     padding: 20px;
     margin-top: 50px;
+    border-radius: 8px;
 }
 
-#button-getstarted {
+.button-getstarted {
     margin-right: 30px;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-purple);
+    border: none;
 }
 
-#button-getstarted a {
+.button-getstarted a {
     height: 100%;
     width: 100%;
     text-decoration: none;
     color: white;
 }
 
-#button-getstarted:hover {
-    background-color: var(--color-primary-darker);
+.button-getstarted a:hover {
+    color: black;
 }
 
-#button-github {
-    color: var(--color-primary-dark);
+.button-github {
+    color: var(--color-primary-purple);
+    border: 2px solid var(--color-primary-purple);
 }
 
-#button-github a {
+.button-github a {
     height: 100%;
     width: 100%;
     text-decoration: none;
     color: var(--color-primary-dark);
 }
 
-#button-github:hover {
-    border: 3px solid var(--color-primary-darker);
-    color: var(--color-primary-darker);
+.button-github:hover {
+    color: black;
 }
 
-#button-github a:visited {
+.button-github a:visited {
     text-decoration: none;
     color: inherit;
 }
