@@ -70,6 +70,11 @@ header {
 
 iframe {
     margin: 10px;
+    width: 904px; 
+    height: auto; 
+    border: 0; 
+    transform: scale(1); 
+    overflow: hidden;
 }
 
 /* UTILITIES */
@@ -189,6 +194,10 @@ iframe {
 
 .card-vert { width: 20rem; height: auto; }
 .card-hor { width: 40rem; height: auto; }
+
+.card-inline { display: inline; }
+.card-inline-block { display: inline-block; }
+.card-table { display: table; }
 
 /* Padding */
 .pd-2 { padding: 2rem; }
@@ -396,8 +405,14 @@ tr:nth-child(even) {
 }
 .badge-tr {
     position: absolute;
-    top: 1px;
-    right: 1px;
+    top: 0;
+    right: -5px;
+}
+.badge-br{
+    position:absolute;
+    bottom: 5px;
+    right: 5px;
+
 }
 
 /* Background Colors */
@@ -608,18 +623,20 @@ input {
 }
 
 /* SLIDER */
-.slider { background-color: var(--color-secondary-purple); }
+.slider { 
+    background-color: var(--color-secondary-purple);
+    height: 15px;
+}
 
 .slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     background-color: var(--color-primary-purple);
 }
 
 .slider-square {
     -webkit-appearance: none;
     -moz-appearance: none;
-    height: 18px;
     border-radius: 2px;
 }
 
@@ -630,7 +647,6 @@ input {
 .slider-circular {
     -webkit-appearance: none;
     -moz-appearance: none;
-    height: 18px;
     border-radius: 10px;
 }
 
