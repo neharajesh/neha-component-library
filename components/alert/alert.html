@@ -77,6 +77,11 @@
                 <div class="mg-05 pd-05 w-50 fill-secondary-green bdr-green bdr-thick bdr-rad-m"> This is a success alert </div>
                 <div class="mg-05 pd-05 w-50 fill-secondary-blue bdr-blue bdr-thick bdr-rad-m"> This is an info alert </div>
                 <div class="mg-05 pd-05 w-50 fill-secondary-grey bdr-grey bdr-thick bdr-rad-m"> This is a dark alert </div>
+                <iframe class="h-50"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522mg-05%2520pd-05%2520w-50%2520fill-secondary-pink%2520bdr-pink%2520bdr-thick%2520bdr-rad-m%2522%253EThis%2520is%2520a%2520Primary%2520Alert%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
             </div>
 
             <div class="cont-fluid mg-tb-2">
@@ -88,6 +93,11 @@
                 <div class="mg-05 pd-05 w-50 fill-secondary-green bdr-green bdr-thick bdr-rad-m"> This is a success alert. Redirect <a class="txt-700 csr-point txt-underline">here</a>. </div>
                 <div class="mg-05 pd-05 w-50 fill-secondary-blue bdr-blue bdr-thick bdr-rad-m"> This is an info alert. Redirect <a class="txt-700 csr-point txt-underline">here</a>. </div>
                 <div class="mg-05 pd-05 w-50 fill-secondary-grey bdr-grey bdr-thick bdr-rad-m"> This is a dark alert. Redirect <a class="txt-700 csr-point txt-underline">here</a>. </div>
+                <iframe class="h-75"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=%253Cdiv%2520class%253D%2522mg-05%2520pd-05%2520w-50%2520fill-secondary-pink%2520bdr-pink%2520bdr-thick%2520bdr-rad-m%2522%253EThis%2520is%2520a%2520Primary%2520Alert.%2520Redirect%2520%253Ca%2520class%253D%2522txt-700%2520csr-point%2520txt-underline%2522%253Ehere%253C%252Fa%253E.%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
             </div>
 
             <div class="cont-fluid mg-tb-2">
@@ -96,11 +106,22 @@
                 <div id="alert-dismissable" class="flex mg-05 pd-05 w-50 fill-secondary-yellow bdr-yellow bdr-thick bdr-rad-m"> This is a warning alert that can be dismissed.
                     <button id="alert-close-button" onClick="hideDiv()">&times;</button>
                 </div>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=%253Cdiv%2520id%253D%2522alert-dismissable%2522%2520class%253D%2522flex%2520mg-05%2520pd-05%2520w-50%2520fill-secondary-yellow%2520bdr-yellow%2520bdr-thick%2520bdr-rad-m%2522%253E%2520This%2520is%2520a%2520warning%2520alert%2520that%2520can%2520be%2520dismissed.%250A%2520%2520%2520%2520%253Cbutton%2520id%253D%2522alert-close-button%2522%2520onClick%253D%2522hideDiv%28%29%2522%253E%2526times%253B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=const%2520hideDiv%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520var%2520x%2520%253D%2520document.getElementById%28%2522alert-dismissable%2522%29%253B%250A%2520%2520if%2520%28x.style.display%2520%253D%253D%253D%2520%2522none%2522%29%2520%257B%250A%2520%2520%2520%2520x.style.display%2520%253D%2520%2522block%2522%253B%250A%2520%2520%257D%2520else%2520%257B%250A%2520%2520%2520%2520x.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%250A%257D"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
             </div>
         </div>        
     </div>
     <script>
-        function hideDiv() {
+        const hideDiv = () => {
           var x = document.getElementById("alert-dismissable");
           if (x.style.display === "none") {
             x.style.display = "block";

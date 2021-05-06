@@ -69,12 +69,21 @@ header {
 }
 
 iframe {
-    margin: 10px;
-    width: 904px; 
-    height: auto; 
+    margin: 1.5rem;
+    margin-bottom: 0rem;
+    width: 60rem; 
+    height: 18rem; 
     border: 0; 
     transform: scale(1); 
     overflow: hidden;
+}
+
+.iframe-large {
+    height: 20rem;
+}
+
+.iframe-xl {
+    height: 22rem;
 }
 
 /* UTILITIES */
@@ -434,6 +443,9 @@ tr:nth-child(even) {
 
 /* Lists */
 .lst-style-none { list-style: none; }
+.lst-inline { display: inline; }
+.li-inline { display: inline; }
+.lst-stacked { list-style: none; overflow-y: scroll; }
 
 /* Alerts */
 #alert-dismissable { display: block; }
@@ -514,20 +526,20 @@ input {
 }
 
 .textfield-basic {
-    border-bottom: 2px solid var(--color-primary-darker);
+    border-bottom: 2px solid var(--color-primary-purple);
 }
 
 .textfield-basic:focus {
-    background-color: var(--color-primary-lighter);
+    background-color: var(--color-secondary-purple);
 }
 
 .textfield-bg {
-    background-color: var(--color-primary-light-200);
+    background-color: var(--color-secondary-purple);
     border: 2px solid transparent;
 }
 
 .textfield-bg:focus {
-    border: 2px solid var(--color-primary-darker);
+    border: 2px solid var(--color-primary-purple);
 }
 
 .textfield-outline {
@@ -535,45 +547,8 @@ input {
 }
 
 .textfield-outline:focus {
-    border: 2px solid var(--color-primary-darker);
+    border: 2px solid var(--color-primary-purple);
 }
-
-/* LISTS */
-.list-spaced {
-    display: inline;
-}
-
-.list-item-inline {
-    display: inline;
-    text-decoration: none;
-    padding-left: 10px;
-}
-
-.list-stacked {
-    list-style: none;
-    height: 400px;
-    overflow-y: scroll;
-}
-
-.list-item-stacked {
-    border: 1px solid var(--color-primary-light);
-    text-decoration: none;
-    padding: 10px;
-    padding-bottom: 0px;
-    width: 450px;
-    display: flex;
-}
-
-#list-item-stacked-image {
-    height: 50px;
-    width: 50px;
-}
-
-#list-item-stacked-content {
-    margin-left: 10px;
-    font-size: 0.8em;
-}
-
 
 /* MODAL */
 .modal {
@@ -582,26 +557,22 @@ input {
     position: fixed;
     left: 31%;
     top: 20%;
-    width: 600px;
-    height: 200px;
+    width: 40rem;
+    height: 15rem;
     animation-name: animatetop;
     animation-duration: 0.3s;
     z-index: 5;
 }
 
 #modal-dark {
-    border: 2px solid var(--color-primary-darker);
-    background-color: var(--color-primary-darker);
+    border: 2px solid var(--color-primary-primary);
+    background-color: var(--color-primary-purple);
     color: white;
 }
 
 #modal-light {
-    border: 2px solid var(--color-primary-light);
-    background-color: var(--color-primary-light);
-}
-
-#modal-button {
-    width: 150px;
+    border: 2px solid var(--color-secondary-purple);
+    background-color: var(--color-secondary-purple);
 }
 
 #modal-dismiss-button {
@@ -615,6 +586,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 }
 
 @keyframes animatetop {

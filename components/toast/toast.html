@@ -66,18 +66,42 @@
         </div>
 
         <div class="h-100 w-100">
-            <div class="cont-fluid mg-tb-2">
+            <div class="cont-fluid mg-tb-2 h-auto">
                 <p class="txt-xl txt-700 mg-tb-1">Toast - Snackbar</p>
                 <p>Snackbar toasts are used to show messages on the screen. This snackbar will disappear after 3 seconds.</p>
                 <button class="pd-05 mg-05 bdr-none bdr-rad-m btn btn-primary-purple txt-white" id="showSnackbar" onclick="showSnackbar()">Show Snackbar</button>
                 <div id="snackbar"> This is the snackbar message. </div> 
+                <br>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=%253Cbutton%2520class%253D%2522pd-05%2520mg-05%2520bdr-none%2520bdr-rad-m%2520btn%2520btn-primary-purple%2520txt-white%2522%2520id%253D%2522showSnackbar%2522%2520%2509%2509%2509onclick%253D%2522showSnackbar%28%29%2522%253EShow%2520Snackbar%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522snackbar%2522%253E%2520This%2520is%2520the%2520snackbar%2520message.%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=const%2520showSnackbar%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520var%2520toast%2520%253D%2520document.getElementById%28%2522snackbar%2522%29%253B%250A%2520%2520%2520%2520toast.className%2520%253D%2520%2522show%2522%253B%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toast.className%2520%253D%2520toast.className.replace%28%2522show%2522%252C%2520%2522%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%257D%253B"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
             </div>
 
-            <div class="cont-fluid mg-tb-2">
+            <div class="cont-fluid mg-tb-2 h-auto">
                 <p class="txt-xl txt-700 mg-tb-1">Toast - Notify</p>
                 <p>Toasts can also be used to show notifications on the screen. These also disappear after 3 seconds.</p>
                 <button class="pd-05 mg-05 bdr-none bdr-rad-m btn btn-primary-purple txt-white" id="showNotification" onclick="showNotif()">Notify</button>
                 <div id="notification-container"> </div>
+                <br>
+                <iframe class="h-75"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=%253Cbutton%2520class%253D%2522pd-05%2520mg-05%2520bdr-none%2520bdr-rad-m%2520btn%2520btn-primary-purple%2520txt-white%2522%2520id%253D%2522showNotification%2522%2520%2509%2509%2509onclick%253D%2522showNotif%28%29%2522%253ENotify%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522notification-container%2522%253E%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <iframe class="card-h-30"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=shades-of-purple&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=7px&ph=5px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=144%25&si=false&es=1x&wm=false&code=let%2520notificationContainer%2520%253D%2520document.getElementById%28%2522notification-container%2522%29%253B%250A%250Aconst%2520showNotif%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520var%2520notification%2520%253D%2520document.getElementById%28%2522notification%2522%29%253B%250A%2520%2520%2520%2520const%2520div%2520%253D%2520document.createElement%28%2522div%2522%29%253B%250A%2520%2520%2520%2520div.classList.add%28%2522pd-1%2522%252C%2520%2522bdr-rad-m%2522%252C%2520%2522txt-white%2522%252C%2520%2522mg-tb-05%2522%252C%2520%2522fill-primary-purple%2522%29%253B%250A%2520%2520%2520%2520div.innerText%2520%253D%2520%2522This%2520is%2520a%2520notification.%2522%253B%250A%2520%2520%2520%2520div.style.textAlign%2520%253D%2520%2522center%2522%253B%250A%250A%2520%2520%2520%2520notificationContainer.appendChild%28div%29%253B%250A%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520div.remove%28%29%253B%250A%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%257D"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
             </div>
         </div>        
     </div>
